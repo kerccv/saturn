@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/iconka.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SATURN</title>
+</head>
+<body>
+
+    <div class="panel">
+    <img class="icontool" src="img/icon.ico" alt=""><b id="reloadButton" href="" class="textdebug">SATURN</b>
+        <button onclick="smoothScrollTo('section3')" class="button28">Download</button>
+    </div>
+        <section id="section1" class="active"><div class="verx"></div>
+        <div id="section1"><button onclick="smoothScrollTo('section2')" class="oprog">About</button>
+        <img class="toolpng lineUp" src="img/tool2.png" alt="">
+        <img class="fluid1" src="img/fluid1.png" alt="">
+        <img class="fluid3" src="img/fluid3.png" alt="">
+        <p class="optool">SATURN</p>
+        <p class="ez">• Easy and intuitive interface.</p>
+        <p class="comp">• Compatible with Windows 10 and Windows 11.</p>
+        <p class="nom">• Data security and no malware.</p>
+        </div></section>
+        <div class="pefer"></div>
+        <section id="section2"><div id="section2" class="about">
+            <div  class="ght">
+                <img class="fluid2" src="img/fluid2.png" alt="">
+                <img class="fluid22" src="img/fluid1.png" alt="">
+                <div class="aboutdiv"><a class="abouttooltext">ABOUT THIS TOOL</a>
+                <img class="toolpng2" src="img/tool1.png" alt="">
+                <a class="abouttexttool">This is a program to improve the performance of your PC. It optimizes the system, reduces lag and increases FPS in games and applications, providing a smoother and faster experience. With "saturn", you can maximize the potential of your computer by eliminating inefficient processes and improving overall performance.</a>
+                <button onclick="smoothScrollTo('section3')" class="dwnbut">Download</button></div>
+                <button onclick="smoothScrollTo('section1')" class="ontop1">Back</button>
+            </div></section>
+            
+            
+        </div>
+
+        <section id="section3"><div id="section3" class="niz">
+            <button onclick="smoothScrollTo('section4')" class="by">by @debug1</button>
+            <a class="dwnldtext">DOWNLOAD ON:</a>
+            <a href=""><img class="git" src="img/github.png" alt=""></a>
+            <a href=""><img class="google" src="img/google.png" alt=""></a>
+            <a href=""><img class="mega" src="img/mega.png" alt=""></a>
+            <button onclick="smoothScrollTo('section2')" class="ontop2">Back</button>
+
+        </div></section>
+        <section id="section4" class="active">
+            <div id="section4" class="biodiv">
+                <a class="abo">ABOUT ME:</a>
+                <a class="abou">15 year old frontend developer, also write in C#, and a little python. I have been programming for 2 years. Owner of the project "SATURN". My favorite TV series: MR. Robot. My favorite cars: Nissan Silvia s15, Toyota Supra 1998. That's all.</a>
+                <a class="abo1" href="https://t.me/kxrccv">PLEASE SUBSCRIBE TO MY TG @kxrccv</a>
+                <button onclick="smoothScrollTo('section3')" class="ontop3">Back</button>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".abo");
+                const originalText = textElement.textContent;
+                const possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+                let iterations = 0;
+                let animationPlayed = false;
+                
+                function glitchEffect() {
+                    let displayedText = "";
+                    for (let i = 0; i < originalText.length; i++) {
+                        if (i < iterations) {
+                            displayedText += originalText[i];
+                        } else {
+                            displayedText += possible.charAt(Math.floor(Math.random() * possible.length));
+                        }
+                    }
+                    textElement.textContent = displayedText;
+                    iterations++;
+                    
+                    if (iterations <= originalText.length) {
+                        setTimeout(glitchEffect, 120);
+                    }
+                }
+                
+                function checkVisibility() {
+                    const rect = textElement.getBoundingClientRect();
+                    const screenHeight = window.innerHeight;
+                    
+                    if (rect.top <= screenHeight / 2 && !animationPlayed) {
+                        animationPlayed = true;
+                        glitchEffect();
+                    }
+                }
+                
+                
+                window.addEventListener("scroll", checkVisibility);
+                checkVisibility();
+            });
+
+            document.addEventListener("scroll", () => {
+    document.querySelectorAll("section").forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight * 0.75) {
+            section.querySelectorAll("a").forEach(link => {
+                link.classList.add("lineUp");
+            });
+        } else {
+            section.querySelectorAll("a").forEach(link => {
+                link.classList.remove("lineUp");
+            });
+        }
+    });
+});
+document.getElementById("reloadButton").addEventListener("click", function() {
+    const firstSection = document.getElementById("section1");
+    firstSection.scrollIntoView({ behavior: "smooth" });
+    setTimeout(function() {
+        location.reload();
+    }, 500); 
+});
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".optool");
+                const originalText = textElement.textContent;
+                const possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+                let iterations = 0;
+                let animationPlayed = false;
+                
+                function glitchEffect() {
+                    let displayedText = "";
+                    for (let i = 0; i < originalText.length; i++) {
+                        if (i < iterations) {
+                            displayedText += originalText[i];
+                        } else {
+                            displayedText += possible.charAt(Math.floor(Math.random() * possible.length));
+                        }
+                    }
+                    textElement.textContent = displayedText;
+                    iterations++;
+                    
+                    if (iterations <= originalText.length) {
+                        setTimeout(glitchEffect, 120);
+                    }
+                }
+                
+                function checkVisibility() {
+                    const rect = textElement.getBoundingClientRect();
+                    const screenHeight = window.innerHeight;
+                    
+                    if (rect.top <= screenHeight / 2 && !animationPlayed) {
+                        animationPlayed = true;
+                        glitchEffect();
+                    }
+                }
+                
+                
+                window.addEventListener("scroll", checkVisibility);
+                checkVisibility();
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".abouttooltext");
+                const originalText = textElement.textContent;
+                const possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+                let iterations = 0;
+                let animationPlayed = false;
+                
+                function glitchEffect() {
+                    let displayedText = "";
+                    for (let i = 0; i < originalText.length; i++) {
+                        if (i < iterations) {
+                            displayedText += originalText[i];
+                        } else {
+                            displayedText += possible.charAt(Math.floor(Math.random() * possible.length));
+                        }
+                    }
+                    textElement.textContent = displayedText;
+                    iterations++;
+                    
+                    if (iterations <= originalText.length) {
+                        setTimeout(glitchEffect, 70);
+                    }
+                }
+                
+                function checkVisibility() {
+                    const rect = textElement.getBoundingClientRect();
+                    const screenHeight = window.innerHeight;
+                    
+                    if (rect.top <= screenHeight / 2 && !animationPlayed) {
+                        animationPlayed = true;
+                        glitchEffect();
+                    }
+                }
+                
+                window.addEventListener("scroll", checkVisibility);
+                checkVisibility(); 
+            });
+            </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".textdebug");
+                const originalText = textElement.textContent;
+                const possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+                let iterations = 0;
+                let animationPlayed = false;
+                
+                function glitchEffect() {
+                    let displayedText = "";
+                    for (let i = 0; i < originalText.length; i++) {
+                        if (i < iterations) {
+                            displayedText += originalText[i];
+                        } else {
+                            displayedText += possible.charAt(Math.floor(Math.random() * possible.length));
+                        }
+                    }
+                    textElement.textContent = displayedText;
+                    iterations++;
+                    
+                    if (iterations <= originalText.length) {
+                        setTimeout(glitchEffect, 70);
+                    }
+                }
+                
+                function checkVisibility() {
+                    const rect = textElement.getBoundingClientRect();
+                    const screenHeight = window.innerHeight;
+                    
+                    if (rect.top <= screenHeight / 2 && !animationPlayed) {
+                        animationPlayed = true;
+                        glitchEffect();
+                    }
+                }
+                
+                window.addEventListener("scroll", checkVisibility);
+                checkVisibility(); 
+            });
+            </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.querySelector(".dwnldtext");
+        const originalText = textElement.textContent;
+        const possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+        let iterations = 0;
+        let animationPlayed = false;
+        
+        function glitchEffect() {
+            let displayedText = "";
+            for (let i = 0; i < originalText.length; i++) {
+                if (i < iterations) {
+                    displayedText += originalText[i];
+                } else {
+                    displayedText += possible.charAt(Math.floor(Math.random() * possible.length));
+                }
+            }
+            textElement.textContent = displayedText;
+            iterations++;
+            
+            if (iterations <= originalText.length) {
+                setTimeout(glitchEffect, 100);
+            }
+        }
+        
+        function checkVisibility() {
+            const rect = textElement.getBoundingClientRect();
+            const screenHeight = window.innerHeight;
+            
+            if (rect.top <= screenHeight / 2 && !animationPlayed) {
+                animationPlayed = true;
+                glitchEffect();
+            }
+        }
+        
+        window.addEventListener("scroll", checkVisibility);
+        checkVisibility(); 
+    });
+    </script>
+
+<script>
+    function smoothScrollTo(sectionId) {
+    const sections = document.querySelectorAll("section");
+    const targetSection = document.getElementById(sectionId);
+
+    sections.forEach(section => section.classList.remove("active"));
+
+    if (targetSection) {
+        const startY = window.scrollY;
+        const targetY = targetSection.getBoundingClientRect().top + startY;
+        const distance = targetY - startY;
+        const duration = 500;
+        let startTime = null;
+
+        function animationStep(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+
+            window.scrollTo(0, startY + distance * easeInOutQuad(progress));
+
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animationStep);
+            } else {
+                setTimeout(() => {
+                    targetSection.classList.add("active");
+                }, 50);
+            }
+        }
+
+        function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+        }
+
+        requestAnimationFrame(animationStep);
+    }
+}
+
+</script>
+<script>
+document.addEventListener("scroll", () => {
+
+    const targetClasses = ["toolpng", "toolpng2"];
+    document.querySelectorAll("img").forEach(img => {
+        targetClasses.forEach(className => {
+            if (img.classList.contains(className)) {
+                const sectionTop = img.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight * 0.75) {
+                    img.classList.add("lineUp");
+                } else {
+                    img.classList.remove("lineUp");
+                }
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
